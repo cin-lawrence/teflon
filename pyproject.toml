@@ -1,0 +1,22 @@
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "teflon"
+version = "0.0.1"
+description = "Embedding databases"
+authors = ["Lawrence Feng <lawrence@cinnamon.is>"]
+license = "MIT"
+
+[tool.poetry.include]
+files = ["teflon/py.typed"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[tool.ruff]
+src = ["teflon"]
